@@ -4,35 +4,66 @@
 <meta charset="UTF-8">
 <title>О, чудо!</title>
 <style>
-p {
-color:green;
-text-align: center;
-}
+
 body {
-background-color:black;
-}
-.cont{
-    display:flex;
-    border: 4px double rgb(247, 10, 10);
+  background-color: #ccc;
 }
 
-.box{
-    border:1px solid rgb(255, 255, 255);
-    padding: 10px;
+.big{
+  background-color: #aaa;
+  width:200px;
+  text-align:center;
+  padding: 20px;
+  left:0;
+  right:0;
+  margin:0 auto;
+
+  display:none;
 }
 
-.box:hover {
-    cursor: pointer;
-    background-color: blue;
+.small{
+  background-color: #aaa;
+  width:200px;
+  text-align:center;
+  padding: 20px;
+  left:0;
+  right:0;
+  margin:0 auto;
+
+  display:none;
+}
+
+.test{
+  background-color: #aaa;
+  width: 200px;
+
+  left:0;
+  right:0;
+  margin:0 auto;
+  position:absolute;
+  top:50%;
+  transform:translate(0,-50%);
+  padding:10px;
+  border:1px dotted red;
+}
+
+
+
+@media (max-width:600px) {
+  .test{font-size:1.2em;}
+  .small{display:block;}
+}
+
+@media (min-width:601px) {
+  .big{display:block;}
 }
 
 </style>
 </head>
 <body>
-<p>Привет, Нео. Matrix has you</p>
-<div class="cont">
-    <div class="box"><img src="https://i.ytimg.com/vi/FftKrPGImWc/maxresdefault.jpg" alt="Тото картинка" width=100px></div>
-
-</div>
+  <div class="big">Техт на большом экране</div>
+  <div class="small">Техт на маленьком экране</div>
+  <div class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ipsum quidem quam molestiae ratione delectus eos facilis beatae, sit voluptate iusto quibusdam corrupti odio natus quae laborum eligendi dolor cumque.</div>
+    
 </body>
 </html>
