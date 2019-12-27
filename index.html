@@ -1,69 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>О, чудо!</title>
-<style>
-
-body {
-  background-color: #ccc;
-}
-
-.big{
-  background-color: #aaa;
-  width:200px;
-  text-align:center;
-  padding: 20px;
-  left:0;
-  right:0;
-  margin:0 auto;
-
-  display:none;
-}
-
-.small{
-  background-color: #aaa;
-  width:200px;
-  text-align:center;
-  padding: 20px;
-  left:0;
-  right:0;
-  margin:0 auto;
-
-  display:none;
-}
-
-.test{
-  background-color: #aaa;
-  width: 200px;
-
-  left:0;
-  right:0;
-  margin:0 auto;
-  position:absolute;
-  top:50%;
-  transform:translate(0,-50%);
-  padding:10px;
-  border:1px dotted red;
-}
-
-
-
-@media (max-width:600px) {
-  .test{font-size:1.2em;}
-  .small{display:block;}
-}
-
-@media (min-width:601px) {
-  .big{display:block;}
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+ 
 <body>
-  <div class="big">Техт на большом экране</div>
-  <div class="small">Техт на маленьком экране</div>
-  <div class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate ipsum quidem quam molestiae ratione delectus eos facilis beatae, sit voluptate iusto quibusdam corrupti odio natus quae laborum eligendi dolor cumque.</div>
-    
+  <div class="text t1">Пример текста</div>
+  <div class="text t2">Пример текста 1.2rem</div>
+  <div class="text t3">Пример текста 1.3rem</div>
+  <div class="text t4">Пример текста 1.4rem</div>
+  <div class="text t5">Пример текста 1.5rem</div>
+  
+  <div class="footer"><a href="test/index.html">Непонятно</a></div>
 </body>
 </html>
