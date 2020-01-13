@@ -17,7 +17,7 @@ play (-1);
 function play(direction) { 
     if (cheat == 2 || 
         jump<10 && currentNum-jump < 0 ||
-        jump<10 && currentNum+jump > 100){
+        jump<10 && currentNum+jump > maxNum){
         alert("Не может быть )");
     } else {
         currentNum = currentNum + direction * jump;
