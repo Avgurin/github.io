@@ -8,7 +8,7 @@ const logTry = document.getElementById("log-try");
 
 
 
-let maxNum = parseInt(prompt("Загадайте число от 0 до ","100"));
+let maxNum = parseInt(prompt("Загадайте число от 1 до ","100"));
 let cheat = 0;
 let logTryNum = 0;
 let directionSymbol = "";
