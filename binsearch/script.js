@@ -27,8 +27,8 @@ play (-1);
 
 function play(direction) { 
     if ( 
-        jump<10 && currentNum-jump <= 0 ||
-        jump<10 && currentNum+jump > maxNum){
+        direction===-1 && jump<10 && currentNum-jump < 0 ||
+        direction===1 && jump<10 && currentNum+jump >= maxNum){
         alert("Не может быть )");
     } else if (cheat == 2){
         end();
