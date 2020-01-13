@@ -8,48 +8,26 @@ const logTry = document.getElementById("log-try");
 
 
 
-let maxNum = parseInt(prompt("Загадайте число от 1 до ","100"));
+let maxNum = parseInt(prompt("Загадайте число от 0 до ","100"));
 let cheat = 0;
 let logTryNum = 0;
 let directionSymbol = "";
 let tryCount = 0;
-
-//maxTry.textContent = maxNum;
 
 if (isNaN(maxNum) || maxNum < 1) {
     alert("Какую-то фигню ввели. Макс число будет 100");
     maxNum = 100;
 }
 
-
+maxNum +=1;
 let currentNum = maxNum;
 let jump = Math.round(currentNum / 2);
 maxTry.textContent = Math.round(Math.log2(maxNum));
 play (-1);
 
-/*
-function play(direction) { 
-    if (cheat == 2 || 
-        jump<10 && currentNum-jump < 0 ||
-        jump<10 && currentNum+jump > maxNum){
-        alert("Не может быть )");
-    } else {
-        tryCount += 1;
-        currentNum = currentNum + direction * jump;
-        showResult(currentNum);
-        directionSymbol = direction>0?" > ":" < ";
-        logTryNum = jump===Math.round(maxNum / 2)?currentNum:(logTryNum + directionSymbol + currentNum);
-        showLogTry(logTryNum);
-        
-        jump=Math.round(jump / 2);
-        if (jump === 1){cheat++};
-        console.log(`cheat= ${cheat} currentNum=${currentNum} jump=${jump}`);
-    }
-}
-*/
 function play(direction) { 
     if ( 
-        jump<10 && currentNum-jump < 0 ||
+        jump<10 && currentNum-jump <= 0 ||
         jump<10 && currentNum+jump > maxNum){
         alert("Не может быть )");
     } else if (cheat == 2){
