@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <h2>Бинарный поиск</h2>
+    <h2><span id="end-game">Бинарный поиск</span></h2>
 </header>
 <!--    
 <section id="inputs">
@@ -19,7 +19,7 @@
     </div>        
 </section>
 -->
-<section id="results">
+<section id="results" class="text-info">
     <h2>Вы загадали <span id="current-result">0</span> ?</h2>
 </section>
 
@@ -27,6 +27,14 @@
     <button type="button" id="btn_less">Меньше</button>
     <button type="button" id="btn_end">Да</button>
     <button type="button" id="btn_more">Больше</button>
+</section>
+
+<section class="text-info">
+    <h2>Максимально попыток Log<sub>2</sub>(N) = <span id="max-try">0</span></h2>
+</section>
+
+<section class="text-info">
+    <h2>Догадки: <span id="log-try">0</span></h2>
 </section>
 
 </body>
